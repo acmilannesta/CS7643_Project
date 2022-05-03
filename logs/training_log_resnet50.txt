@@ -1,0 +1,199 @@
+--------------------------------------------------
+densenet121_fold0_val78341_test77717.h5
+LR = 0.0004
+Epochs = 10
+Global Average Pooling
+BCE Loss
+--------------------------------------------------
+densenet121_fold0_val77974_test76543.h5
+LR = 0.0002
+Epochs = 10
+Global Average Pooling
+BCE Loss
+--------------------------------------------------
+densenet121_fold0_val78638_test77672.h5
+LR = 0.0002
+Epochs = 10
+Drop out = 0.2
+Global Average Pooling
+BCE Loss
+--------------------------------------------------
+densenet121_fold0_val78391_test76995.h5
+LR = 0.0002
+Epochs = 10
+Drop out = 0
+GeM Pooling
+BCE Loss
+--------------------------------------------------
+densenet121_fold0_val79404_test78492.h5
+LR = 0.0002
+Epochs = 10
+Drop out = 0
+Global Average Pooling
+BCE Loss
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 25% cutout of 100*100
+  - 50% original
+--------------------------------------------------
+densenet121_fold0_val77720_test79341.h5
+Validation AUC: 0.86323 Precision: 0.77586 Recall: 0.77855 F1:  0.77720
+Test AUC: 0.85134 Precision: 0.76149 Recall: 0.82812 F1:  0.79341
+LR = 0.0002
+Epochs = 6
+Drop out = 0.2
+Concat Global Average Pooling + Global Max Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 25% cutout of 100*100
+  - 50% original
+--------------------------------------------------
+densenet121_fold0_val79722_test77846.h5
+Validation AUC: 0.83959 Precision: 0.71905 Recall: 0.89446 F1:  0.79722
+Test AUC: 0.83065 Precision: 0.76667 Recall: 0.79063 F1:  0.77846
+LR = 0.0002
+Epochs = 6
+Drop out = 0.2
+Pool3_relu + Pool4_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+densenet121_fold0_val79260_test79638.h5
+Validation AUC: 0.85388 Precision: 0.74024 Recall: 0.85294 F1:  0.79260
+Test AUC: 0.86021 Precision: 0.76968 Recall: 0.82500 F1:  0.79638
+LR = 0.0002
+Epochs = 6
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+resnet50_fold0_val74795_test73599.h5
+Validation AUC: 0.84260 Precision: 0.78887 Recall: 0.71107 F1:  0.74795
+Test AUC: 0.82813 Precision: 0.75410 Recall: 0.71875 F1:  0.73600
+LR = 0.0002
+Epochs = 10
+Drop out = 0.3
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+resnet50_fold0_val78601_test79389.h5
+Validation AUC: 0.86144 Precision: 0.77479 Recall: 0.79758 F1:  0.78602
+Test AUC: 0.85714 Precision: 0.77612 Recall: 0.81250 F1:  0.79389
+LR = 0.0002
+Epochs = 15
+Drop out = 0.3
+conv222 + conv232 + conv332 + conv342 + conv452 + conv532 Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+resnet50_fold0_val78538_test75667.h5
+Validation AUC: 0.83367 Precision: 0.71328 Recall: 0.87370 F1:  0.78538
+Test AUC: 0.84189 Precision: 0.76025 Recall: 0.75313 F1:  0.75667
+LR = 0.0002
+Epochs = 15
+Drop out = 0.3
+baseline Resnet50
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+resnet50_fold0_val78565_test8.h5
+Validation AUC: 0.84648 Precision: 0.74268 Recall: 0.83391 F1:  0.78566
+Test AUC: 0.86327 Precision: 0.78788 Recall: 0.81250 F1:  0.80000
+LR = 0.0002
+Epochs = 15
+Drop out = 0.3
+conv222, conv311, conv312, conv321, conv322, conv331, conv332, conv342, conv452, conv532
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+resnet50_fold0_val77834_test77187.h5
+Validation AUC: 0.85078 Precision: 0.76159 Recall: 0.79585 F1:  0.77834
+Test AUC: 0.83773 Precision: 0.77187 Recall: 0.77187 F1:  0.77187
+LR = 0.0002
+Epochs = 15
+Drop out = 0.3
+baseline, no data augmentation 
+--------------------------------------------------
+resnet50_fold0_val77898_test79076.h5
+Validation AUC: 0.83326 Precision: 0.75201 Recall: 0.80796 F1:  0.77898
+Test AUC: 0.84306 Precision: 0.77879 Recall: 0.80312 F1:  0.79077
+LR = 0.0002
+Epochs = 15
+Drop out = 0.3
+concat features, with data augmentation 
+--------------------------------------------------
+resnet50_fold0_val78154_test74626.h5
+Validation AUC: 0.84139 Precision: 0.66996 Recall: 0.93772 F1:  0.78154
+Test AUC: 0.85338 Precision: 0.79505 Recall: 0.70312 F1:  0.74627
+LR = 0.0004
+Epochs = 15
+Drop out = 0.3
+concat features, with data augmentation, lr doubled 
+--------------------------------------------------
+resnet50_fold0_val77371_test78115.h5
+Validation AUC: 0.83713 Precision: 0.74519 Recall: 0.80450 F1:  0.77371
+Test AUC: 0.84349 Precision: 0.76036 Recall: 0.80312 F1:  0.78116
+LR = 0.0002
+Epochs = 10
+Drop out = 0.3
+baseline, no DA 
+--------------------------------------------------
+resnet50_fold0_val76592_test77621.h5
+Validation AUC: 0.84080 Precision: 0.76199 Recall: 0.76990 F1:  0.76592
+Test AUC: 0.84929 Precision: 0.77743 Recall: 0.77500 F1:  0.77621
+LR = 0.0002
+Epochs = 15
+Drop out = 0.3
+baseline, with DA 
+--------------------------------------------------
+resnet50_fold0_val77094_test77966.h5
+Validation AUC: 0.84465 Precision: 0.76182 Recall: 0.78028 F1:  0.77094
+Test AUC: 0.84976 Precision: 0.76900 Recall: 0.79063 F1:  0.77966
+LR = 0.0002
+Epochs = 15
+Drop out = 0.3
+baseline, with DA 
+  - 25% random flip and rotation
+  - 25% cutout of 100*100
+  - 50% original
+--------------------------------------------------
+resnet50_fold0_val78434_test77897.h5
+Validation AUC: 0.84985 Precision: 0.75602 Recall: 0.81488 F1:  0.78435
+Test AUC: 0.84661 Precision: 0.77064 Recall: 0.78750 F1:  0.77898
+LR = 0.0002
+Epochs = 15
+Drop out = 0.3
+concat, 20% random contrast with DA 
+--------------------------------------------------
+resnet50_fold0_val79050_test80185.h5
+Validation AUC: 0.85499 Precision: 0.77537 Recall: 0.80623 F1:  0.79050
+Test AUC: 0.85746 Precision: 0.79448 Recall: 0.80937 F1:  0.80186
+LR = 0.0002
+Epochs = 15
+Drop out = 0.3
+concat, 50% random contrast 
+  - 25% random flip and rotation
+  - 25% cutout of 100*100
+  - 50% random contrast
+--------------------------------------------------
+resnet50_fold0_val77391_test76535.h5
+Validation AUC: 0.85098 Precision: 0.77797 Recall: 0.76990 F1:  0.77391
+Test AUC: 0.84607 Precision: 0.77143 Recall: 0.75938 F1:  0.76535
+LR = 0.0002
+Epochs = 15
+Drop out = 0.3
+baseline no da 

@@ -1,0 +1,221 @@
+--------------------------------------------------
+Used: Note: B0 model, sigmoid function, weight not freezing, learning rate of 0.01
+EfficientNetB0_fold0_val72937_test71657.h5
+Validation AUC: 0.74104 Precision: 0.65786 Recall: 0.81834 F1:  0.72938
+Test AUC: 0.72632 Precision: 0.62617 Recall: 0.83750 F1:  0.71658
+LR = 0.001
+Epochs = 6
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: should not freeze weight, learning rate of 0.00001 does not work, might need more epochs. Note: B0 model, sigmoid function, weight not freezing, learning rate of 0.01
+EfficientNetB0_fold0_val71466_test67944.h5
+Validation AUC: 0.79400 Precision: 0.73492 Recall: 0.69550 F1:  0.71467
+Test AUC: 0.64162 Precision: 0.51535 Recall: 0.99687 F1:  0.67945
+LR = 0.001
+Epochs = 6
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: BatchNorm does not improve. Note: B0 model, sigmoid function, weight not freezing, learning rate of 0.001
+EfficientNetB0_fold0_val66743_test66666.h5
+Validation AUC: 0.64779 Precision: 0.50087 Recall: 1.00000 F1:  0.66744
+Test AUC: 0.58402 Precision: 0.50000 Recall: 1.00000 F1:  0.66667
+LR = 0.001
+Epochs = 6
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: 12 epochs helps, but overfit. Note: B0 model, sigmoid function, weight not freezing, learning rate of 0.001
+EfficientNetB0_fold0_val74141_test74342.h5
+Validation AUC: 0.83893 Precision: 0.77652 Recall: 0.70934 F1:  0.74141
+Test AUC: 0.82457 Precision: 0.78472 Recall: 0.70625 F1:  0.74342
+LR = 0.001
+Epochs = 12
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: No augmentation is pretty good. Note: B0 model no augmentation, sigmoid function, weight not freezing, learning rate of 0.001
+EfficientNetB0_fold0_val73148_test75667.h5
+Validation AUC: 0.82706 Precision: 0.75506 Recall: 0.70934 F1:  0.73149
+Test AUC: 0.82991 Precision: 0.76025 Recall: 0.75313 F1:  0.75667
+LR = 0.001
+Epochs = 10
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Used: Learn: Overfitting with no augmentation, LR of 0.002 is not stable. Note: B0 model no augmentation, sigmoid function, weight not freezing, learning rate of 0.002
+EfficientNetB0_fold0_val75355_test72641.h5
+Validation AUC: 0.80667 Precision: 0.72859 Recall: 0.78028 F1:  0.75355
+Test AUC: 0.81119 Precision: 0.73101 Recall: 0.72188 F1:  0.72642
+LR = 0.002
+Epochs = 15
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: initial Luz paper not working Note: B0 model no augmentation, sigmoid function, weight not freezing, learning rate of 0.002
+EfficientNetB0_fold0_val66743_test10826.h5
+Validation AUC: 0.38646 Precision: 0.50087 Recall: 1.00000 F1:  0.66744
+Test AUC: 0.59877 Precision: 0.61290 Recall: 0.05937 F1:  0.10826
+LR = 0.001
+Epochs = 8
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: run Luz setting a 2nd time (without clearing). Is it a leftover model? Note: B0 model no augmentation, sigmoid function, weight not freezing, learning rate of 0.002
+EfficientNetB0_fold0_val71906_test74478.h5
+Validation AUC: 0.82137 Precision: 0.75236 Recall: 0.68858 F1:  0.71906
+Test AUC: 0.82519 Precision: 0.76568 Recall: 0.72500 F1:  0.74478
+LR = 0.001
+Epochs = 8
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Used: Learn: confirm Luz setting from beginning. Good val curve. Promising! Note: B0 model no augmentation, sigmoid function, weight not freezing, learning rate of 0.002
+EfficientNetB0_fold0_val74915_test73239.h5
+Validation AUC: 0.80612 Precision: 0.61276 Recall: 0.96367 F1:  0.74916
+Test AUC: 0.80839 Precision: 0.58647 Recall: 0.97500 F1:  0.73239
+LR = 0.001
+Epochs = 8
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Used: Learn: further improve F1 with last 0.2 dropout. Maybe 12 epoch also helps? Note: B0 model no augmentation, sigmoid function, weight not freezing, learning rate of 0.002
+EfficientNetB0_fold0_val75618_test78481.h5
+Validation AUC: 0.85233 Precision: 0.77256 Recall: 0.74048 F1:  0.75618
+Test AUC: 0.86977 Precision: 0.79487 Recall: 0.77500 F1:  0.78481
+LR = 0.001
+Epochs = 12
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Used: Learn: B1 similar to B0, good loss curve. Note: B1 model, augmentation, sigmoid function, weight not freezing, learning rate of 0.001
+EfficientNetB1_fold0_val77369_test78787.h5
+Validation AUC: 0.86889 Precision: 0.76391 Recall: 0.78374 F1:  0.77370
+Test AUC: 0.87037 Precision: 0.76471 Recall: 0.81250 F1:  0.78788
+LR = 0.001
+Epochs = 12
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: B2 not as good as before. Note: B2 model, augmentation, sigmoid function, weight not freezing, learning rate of 0.001
+EfficientNetB2_fold0_val77750_test75994.h5
+Validation AUC: 0.82612 Precision: 0.73498 Recall: 0.82526 F1:  0.77751
+Test AUC: 0.81429 Precision: 0.71866 Recall: 0.80625 F1:  0.75994
+LR = 0.001
+Epochs = 12
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: B3 is good. Good curve. Note: B3 model, augmentation, sigmoid function, weight not freezing, learning rate of 0.001
+EfficientNetB3_fold0_val78644_test78115.h5
+Validation AUC: 0.85648 Precision: 0.77076 Recall: 0.80277 F1:  0.78644
+Test AUC: 0.84896 Precision: 0.76036 Recall: 0.80312 F1:  0.78116
+LR = 0.001
+Epochs = 12
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: B4 is not as good. Note: B4 model, augmentation, sigmoid function, weight not freezing, learning rate of 0.001
+EfficientNetB4_fold0_val75770_test76996.h5
+Validation AUC: 0.84306 Precision: 0.77199 Recall: 0.74394 F1:  0.75771
+Test AUC: 0.84390 Precision: 0.78758 Recall: 0.75313 F1:  0.76997
+LR = 0.001
+Epochs = 12
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: B5 is the best! Note: B5 model, augmentation, sigmoid function, weight not freezing, learning rate of 0.001
+EfficientNetB5_fold0_val78947_test81286.h5
+Validation AUC: 0.84083 Precision: 0.71429 Recall: 0.88235 F1:  0.78947
+Test AUC: 0.86937 Precision: 0.76374 Recall: 0.86875 F1:  0.81287
+LR = 0.001
+Epochs = 12
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: B6 not as good. Requires batch size of 8, instead of 32. Note: B4 model, augmentation, sigmoid function, weight not freezing, learning rate of 0.001
+EfficientNetB6_fold0_val75127_test77894.h5
+Validation AUC: 0.83646 Precision: 0.73993 Recall: 0.76298 F1:  0.75128
+Test AUC: 0.85214 Precision: 0.75072 Recall: 0.80937 F1:  0.77895
+LR = 0.001
+Epochs = 12
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+Learn: B7 not as good. Requires batch size of 8, instead of 32. Note: B7 model, augmentation, sigmoid function, weight not freezing, learning rate of 0.001
+EfficientNetB7_fold0_val71943_test76073.h5
+Validation AUC: 0.80396 Precision: 0.73166 Recall: 0.70761 F1:  0.71944
+Test AUC: 0.81939 Precision: 0.74699 Recall: 0.77500 F1:  0.76074
+LR = 0.001
+Epochs = 12
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original

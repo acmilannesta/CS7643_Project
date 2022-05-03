@@ -1,0 +1,73 @@
+--------------------------------------------------
+densenet121_fold0_val78341_test77717.h5
+LR = 0.0004
+Epochs = 10
+Global Average Pooling
+BCE Loss
+--------------------------------------------------
+densenet121_fold0_val77974_test76543.h5
+LR = 0.0002
+Epochs = 10
+Global Average Pooling
+BCE Loss
+--------------------------------------------------
+densenet121_fold0_val78638_test77672.h5
+LR = 0.0002
+Epochs = 10
+Drop out = 0.2
+Global Average Pooling
+BCE Loss
+--------------------------------------------------
+densenet121_fold0_val78391_test76995.h5
+LR = 0.0002
+Epochs = 10
+Drop out = 0
+GeM Pooling
+BCE Loss
+--------------------------------------------------
+densenet121_fold0_val79404_test78492.h5
+LR = 0.0002
+Epochs = 10
+Drop out = 0
+Global Average Pooling
+BCE Loss
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 25% cutout of 100*100
+  - 50% original
+--------------------------------------------------
+densenet121_fold0_val77720_test79341.h5
+Validation AUC: 0.86323 Precision: 0.77586 Recall: 0.77855 F1:  0.77720
+Test AUC: 0.85134 Precision: 0.76149 Recall: 0.82812 F1:  0.79341
+LR = 0.0002
+Epochs = 6
+Drop out = 0.2
+Concat Global Average Pooling + Global Max Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 25% cutout of 100*100
+  - 50% original
+--------------------------------------------------
+densenet121_fold0_val79722_test77846.h5
+Validation AUC: 0.83959 Precision: 0.71905 Recall: 0.89446 F1:  0.79722
+Test AUC: 0.83065 Precision: 0.76667 Recall: 0.79063 F1:  0.77846
+LR = 0.0002
+Epochs = 6
+Drop out = 0.2
+Pool3_relu + Pool4_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original
+--------------------------------------------------
+densenet121_fold0_val79260_test79638.h5
+Validation AUC: 0.85388 Precision: 0.74024 Recall: 0.85294 F1:  0.79260
+Test AUC: 0.86021 Precision: 0.76968 Recall: 0.82500 F1:  0.79638
+LR = 0.0002
+Epochs = 6
+Drop out = 0.2
+Pool2_relu + Pool3_relu Global Average Pooling
+Data augmentation on whole batch optimized
+  - 25% random flip and rotation
+  - 50% cutout of 100*100
+  - 25% original

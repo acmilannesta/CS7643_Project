@@ -1,0 +1,25 @@
+/.idea
+/__pycache__
+/model
+/models
+/output
+/data
+/tfrecords
+/proposal
+/model_weights
+/tensorboard
+/.ipynb_checkpoints
+/test_preds
+#/proposal
+*.zip
+meta_data.csv
+stage_2_train_labels.csv
+scratch.py
+#models.py
+training.py
+github_token.txt
+kaggle.json
+# Training.ipynb
+# training_log.txt
+git.ipynb
+ensemble.py

@@ -1,0 +1,21 @@
+name: cs7643-project
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - numpy
+  - pyyaml
+  - matplotlib
+  - scipy
+  - future
+  - opencv
+  - python=3.8.6
+  - pandas
+  - tensorflow
+  - scikit-learn
+  - pydicom
+  - tqdm
+  - pip:
+    - tensorflow-addons
+
+
