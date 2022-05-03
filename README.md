@@ -1,4 +1,4 @@
-# CS7643_Project
+# Pneumonia detection on chest X-ray images using ensemble method
 
 Final Project for OMSCS CS7643 Deep Learning 
 
@@ -8,8 +8,6 @@ Using the RSNA pneumonia chest X-ray images for pneumonia classification, we ens
 (CV) model architectures to incorporate more recent model architecture (e.g., EfficientNet) and data perturbation to
 further improve model external validity.
 
-## Methods
-[TBD]
 
 ## Environment Setup
 
@@ -27,7 +25,7 @@ further improve model external validity.
       `python tfrecords_writing.py`
 - Colab
     - One stop tutorial to download data, set up Github on Colab and create tfrecords \
-      https://colab.research.google.com/drive/17YMKmI_K5QmQTib8wj_dQNNRr9c8yr9O
+      [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17YMKmI_K5QmQTib8wj_dQNNRr9c8yr9O)
 
 ## Data pipelines
 
@@ -67,29 +65,19 @@ python tfrecords_writing.py
   * 200 `tfrecord` (specified by `num_shards`) files saved in `./tfrecords`
 
 ## Model training
+See `Training_[Model Name].ipynb` notebook for each model training implementation details and outputs.
 
-https://colab.research.google.com/drive/1SyVfCMpq0cJDoEylfMXY5uKJha0oniUi?usp=sharing
+Or open notebook in colab (This is for Densenet121)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1SyVfCMpq0cJDoEylfMXY5uKJha0oniUi?usp=sharing)
 
-* Model architectures
-    * VGG
-    * Densenet121
-    * ResNet
-    * EfficientNet
-* Train-Test split: 70% training, 20% validation and 10% testing
-* Data augmentation
-    * 50% original data
-    * 25% random flip and rotation
-    * 25% cut off with 100*100 mask
-* Training parameters
+Please note that Training_vgg16.ipynb is only tested in local Windows machine, for running it in Colab or Linux, it may need some adaptations.
 
-```
-# Densenet-121
-input_size = (227, 227, 3)
-learning_rate = 2e-4
-num_epochs = 6
-drop_out = 0.35
-batch_size = 32
-optimizer: Adam with Cosine Decay Learning Rate Scheduler
-```
+## Data augmentation
+See `image_aug` function in `utils_[Model Name].py` for data augmentation strategies for each model type.
 
+## Model architecture, training strategies and callbacks
+See `models_[Model Name].py` for data augmentation strategies for each model type.
+
+## Project report
+https://www.overleaf.com/project/62333ea55f10390439d64511
 

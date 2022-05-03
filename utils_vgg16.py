@@ -102,6 +102,11 @@ def image_aug(image, random_mode=True):
             mask_size = (100, 100), 
             constant_values = 1 
         )
+    # else:
+        # data_augmentation = keras.Sequential([
+            # keras.layers.RandomContrast(0.2),
+            # ])
+        # image = data_augmentation(tf.expand_dims(image, axis=0))
     return tf.squeeze(image)
 
 def parse_example(serialized, shape, data_aug=False):

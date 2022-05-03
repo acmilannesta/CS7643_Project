@@ -58,17 +58,17 @@ def model_build_finetune(num_train_samples, num_epochs = 10, batch_size=32, lr=2
 
     # backbone.trainable = False
     # x = gem()(backbone.output)
-    # pooling1 = keras.layers.GlobalAveragePooling2D()
-    pooling2 = keras.layers.GlobalMaxPooling2D()
-    gap3 = pooling2(backbone.get_layer('block3_conv3').output)
-    gap4 = pooling2(backbone.get_layer('block4_conv3').output)
+    pooling1 = keras.layers.GlobalAveragePooling2D()
+    # pooling2 = keras.layers.GlobalMaxPooling2D()
+    # gap3 = pooling1(backbone.get_layer('block3_conv3').output)
+    # gap4 = pooling1(backbone.get_layer('block4_conv3').output)
     # gap5 = pooling1(backbone.get_layer('block5_conv3').output)
 
-    x = keras.layers.Concatenate(axis=-1)([gap3, gap4])
+    # x = keras.layers.Concatenate(axis=-1)([gap3, gap4])
     # x = keras.layers.Concatenate(axis=-1)([gap3, gap4, gap5])
 
     # x = pooling1(backbone.output) + pooling2(backbone.output)
-    # x = pooling1(backbone.output)
+    x = pooling1(backbone.output)
     x = keras.layers.Dropout(drop_out)(x)
     # x = keras.layers.Dropout(drop_out) (gap3)
     out = keras.layers.Dense(1, activation='sigmoid', name='pneumonia')(x)
